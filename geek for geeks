@@ -1,4 +1,4 @@
-Greatest of three numbers
+***Greatest of three numbers***
 
 class Solution {
   public int greatestOfThree(int a, int b, int c) {
@@ -15,7 +15,7 @@ class Solution {
 
 
 
-//Vowel or not
+***Vowel or not***
 // User function Template for Java
 class Solution {
     String isVowel(char c) {
@@ -32,7 +32,7 @@ class Solution {
 
 
 
-Leap year 
+***Leap year ***
 // User function Template for Java
 
 class Solution {
@@ -43,6 +43,18 @@ class Solution {
             return false;
         }
     }
+}
+
+
+
+***sum of natural numbers***
+class Solution {
+    public static int findSum(int n) {
+       int sum = 0;
+        for(int i=1;i<=n;i++){
+          sum += i;
+    }     return sum; }
+    
 }
 
 
