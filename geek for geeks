@@ -12,3 +12,19 @@ class Solution {
         
     }
 };
+
+
+
+//Vowel or not
+// User function Template for Java
+class Solution {
+    String isVowel(char c) {
+        char [] arr = {'a','e','i','o','u','A','E','I','O','U'};
+        
+        for(int val:arr)
+         if(c==val){
+             return "YES";
+         }
+             return "NO";
+    }
+}
