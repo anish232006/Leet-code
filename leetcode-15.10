@@ -1,0 +1,110 @@
+***REVERSE INTEGER***
+JAVA
+class Solution {
+  public int reverse(int x) {
+        int result=0;
+
+        while(x != 0) {
+            int digit = x % 10;
+            x = x / 10;
+
+         if(result > Integer.MAX_VALUE / 10 || (result == Integer.MAX_VALUE /10 && digit>7))
+         return 0;
+         if(result < Integer.MIN_VALUE / 10 || (result == Integer.MIN_VALUE /10 && digit<-8))
+         return 0;
+         result = result * 10 +digit;
+        }
+        return result;
+    }
+}
+
+
+***PALINDROME***
+JAVA
+class Solution {
+    public boolean isPalindrome(int x) {
+        if(x<0) return false;
+        int rev=0;
+        int rem;
+        int num = x;
+        while(num!=0){ 
+            rem = num%10;
+            num = num/10;
+            rev = rev*10+rem;
+        }
+        return (x==rev);
+    }
+}
+
+***Number of Common Factors***
+class Solution {
+    public int commonFactors(int a, int b) {
+        int count = 0;
+        int min = Math.min(a, b); 
+
+        for (int i = 1; i <= min; i++) {
+            if (a % i == 0 && b % i == 0) {
+                count++;
+            }
+    }
+           return count++;
+        }
+}
+
+
+
+***Number of Steps to Reduce a Number to Zero***
+class Solution {
+    public int numberOfSteps(int num) {
+        int steps = 0;
+       while(num>   0){
+        if(num%2==0) {
+            num = num/2;
+        } else {
+            num = num -1;
+        }
+          steps++;
+       }
+        return steps++; 
+    }
+        
+}
+
+
+
+***Count Operations to Obtain Zero***
+JAVA
+class Solution {
+    public int subtractProductAndSum(int n) {
+        int product = 1;
+        int sum = 0;
+
+        while(n>0){
+            int digit = n%10;
+            n = n/10;
+
+            product *= digit;
+            sum += digit;
+        }
+        return product - sum;
+    }
+}
+
+
+***Subtract the Product and Sum of Digits of an Integer***
+JAVA
+class Solution {
+    public int subtractProductAndSum(int n) {
+        int product = 1;
+        int sum = 0;
+
+        while(n>0){
+            int digit = n%10;
+            n = n/10;
+
+            product *= digit;
+            sum += digit;
+        }
+        return product - sum;
+    }
+}
